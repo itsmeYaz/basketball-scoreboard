@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Scoreboard 🏀</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="header-title">LEADING TEAM</h1>
+    </header>
+    <div class="container-wrapper">
+      <div class="timer-box">
+        <p id="timer">00:00</p>
+      </div>
+      <div class="container">
+        <div class="container-items">
+          <h3 class="title" id="home-title">HOME</h3>
+          <div class="score-box">
+            <p id="score-home">0</p>
+          </div>
+          <div class="score-button">
+            <button id="add-one-home" class="button">+1</button>
+            <button id="add-two-home" class="button">+2</button>
+            <button id="add-three-home" class="button">+3</button>
+            <button id="minus-one-home" class="button">-1</button>
+          </div>
+        </div>
+
+        <div class="container-items">
+          <h3 class="title" id="guest-title">GUEST</h3>
+          <div class="score-box">
+            <p id="score-guest">0</p>
+          </div>
+          <div class="score-button">
+            <button id="add-one-guest" class="button">+1</button>
+            <button id="add-two-guest" class="button">+2</button>
+            <button id="add-three-guest" class="button">+3</button>
+            <button id="minus-one-guest" class="button">-1</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-buttons">
+      <button id="new-game-btn" class="feature-button">New Game</button>
+      <button id="timer-btn" class="feature-button">Start/Pause Timer</button>
+      <button id="reset-btn" class="feature-button">Reset Timer</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

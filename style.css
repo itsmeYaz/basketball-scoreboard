@@ -1,0 +1,128 @@
+@import url("https://fonts.cdnfonts.com/css/cursed-timer-ulil");
+body {
+  margin: 0;
+  user-select: none;
+  background-image: url("./images/ring.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: #1b244a;
+  padding: 20px;
+}
+
+#header-title {
+  color: #f94f6d;
+  font-family: Verdana, sans-serif;
+  margin: 0 0 2px 0;
+  text-align: center;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  background: #1b244a;
+  padding: 30px 50px 50px 110px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-items {
+  margin-right: 70px;
+}
+
+.timer-box {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  font-size: 40px;
+  width: 400px;
+  background: #080001;
+  color: #f94f6d;
+  text-align: center;
+  padding: 0 80px;
+  border: solid 1px #f94f6d;
+  box-shadow: 0 0px 15px #afe0f5;
+}
+
+.title {
+  font-family: Verdana, sans-serif;
+  color: #eee;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.score-box {
+  width: 155px;
+  height: 120px;
+  background: #080001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 3px 10px 0;
+}
+
+#score-home,
+#score-guest {
+  color: #f94f6d;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  font-size: 60px;
+}
+.button {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  color: #9aabd8;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  text-align: center;
+  background: none;
+  margin-right: 5px;
+}
+
+.button:hover {
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+}
+
+#minus-one-guest,
+#minus-one-home {
+  margin-top: 5px;
+}
+
+.feature-buttons {
+  width: 520px;
+  background: #080001;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px #f94f6d;
+}
+
+.feature-button {
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  color: #9aabd8;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  text-align: center;
+  background: none;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.feature-button:hover {
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+}
