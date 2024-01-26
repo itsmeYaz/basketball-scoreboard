@@ -98,7 +98,6 @@ newGameBtn.addEventListener("click", () => {
   guessScore = 0;
   homeScoreText.textContent = 0;
   guestScoreText.textContent = 0;
-  leadingTeam.textContent = "LEADING TEAM";
   resetTimer();
 });
 
@@ -149,17 +148,11 @@ resetBtn.addEventListener("click", resetTimer);
 
 // Update Leading Team
 function updateLead() {
-  let homeLead = homeScore - guessScore;
-  let guestLead = guessScore - homeScore;
   if (homeScore > guessScore) {
-    leadingTeam.innerHTML = `LEADING TEAM: <span style= "color: white;">HOME, ${homeLead} points lead</span>`;
-    homeTitleEl.innerHTML = `<span style = "color:#39ff14;">HOME</span>`;
-    guestTitleEl.innerHTML = `<span style = "color:#eee;">GUEST</span>`;
+    homeScoreText.innerHTML = `<span style="color: white; text-shadow: 0 0 5px #afe0f5, 0 0 10px #afe0f5, 0 0 15px #afe0f5, 0 0 20px #afe0f5;">${homeScore}</span>`;
+    guestScoreText.innerHTML = `<span style="color: #f94f6d;">${guessScore}</span>`;
   } else if (guessScore > homeScore) {
-    leadingTeam.innerHTML = `LEADING TEAM: <span style="color: white;">GUESS, ${guestLead} points lead</span>`;
-    guestTitleEl.innerHTML = `<span style = "color:#39ff14;">GUEST</span>`;
-    homeTitleEl.innerHTML = `<span style = "color:#eee;">HOME</span>`;
-  } else {
-    leadingTeam.textContent = "DRAW";
+    guestScoreText.innerHTML = `<span style="color: white; text-shadow: 0 0 5px #afe0f5, 0 0 10px #afe0f5, 0 0 15px #afe0f5, 0 0 20px #afe0f5;">${guessScore}</span>`;
+    homeScoreText.innerHTML = `<span style="color: #f94f6d;">${homeScore}</span>`;
   }
 }
